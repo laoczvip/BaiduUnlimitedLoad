@@ -157,10 +157,12 @@
     window.onmousewheel = document.onmousewheel = scrollFunc;
     // ------------------------------------------------------侧边栏相关搜索----------------------------------------------
     function initBottom() {
-        // 隐藏底部相关搜索
-        document.getElementById("rs").style.display = "none"
-        // 隐藏页数
-        document.getElementById("page").style.display = "none"
+        setTimeout(() => {
+            // 隐藏底部相关搜索
+            document.getElementById("rs").style.display = "none"
+            // 隐藏页数
+            document.getElementById("page").style.display = "none"
+        }, 100);
         let My_left = document.createElement("div")
         My_left.setAttribute("style", "height: 100%;width: 115px;position: fixed;transition: all 0.3s;top: 0;left:-118px;background: #00000012;");
         My_left.setAttribute("id", "My_left");
